@@ -12,6 +12,6 @@ A larger theme here is representation design: what should the system preserve, a
 
 ## Andrei Cozma — Reply to Jisu Kim
 
-Your point about LDA gets at an important deployment issue, which is something their accuracy table does not really capture. Since the train/test split uses different samples from the same iris classes, the paper shows that the reduced representation works for a fixed enrolled gallery, but not how stable it is when new identities are added.
+Your point about LDA gets at an important deployment issue, which is something their accuracy table does not really capture. Since the train/test split uses different samples from the same iris classes, the paper shows that the reduced representation works for a fixed enrolled gallery, but not how stable it is when new identities are added.&#x20;
 
 Even if a new user can be added by projecting their samples into the existing LDA space and storing a new class center, the projection was still learned around the original classes. I think it would be interesting to measure how quickly accuracy degrades as new identities are added, and at what point the LDA projection needs to be retrained or revalidated.
